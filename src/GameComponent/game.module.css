@@ -1,0 +1,128 @@
+.container{
+    width: 1300px;
+    height: 650px;
+    margin: 0 auto;
+    margin-bottom: -100px;
+    background: #252E42;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.game_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.gameBoard {
+
+}
+
+.rol{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: center;
+}
+.col{
+    height: 100px;
+    width: 100px;
+    background-color: #61dafb;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 2.5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.col:hover{
+    border: 3px solid coral;
+    opacity: 0.85 ;
+}
+.motions{
+    min-width: 700px;
+    min-height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.butt {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    height: 60px;
+    width: 200px;
+    border: 2px solid #252E42;
+    border-radius: 10px;
+    background-color: #61dafb;
+}
+.butt a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #252E42;
+    font-weight: 600;
+}
+.butt:hover{
+    background-color: #0eb7ef;
+    border: 2px solid coral;
+}
+
+.startMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.text_block{
+    display: flex;
+    flex-direction: row;
+}
+.hello_text{
+    margin: 5px
+}
+.options_block{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.select{
+    height:45px;
+    width:200px;
+    font-size:20px;
+    background-color: #7de54f;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+option{
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.medium{
+    background-color: #ffee2a
+}
+
+.hard{
+    background-color: #ef4141
+}

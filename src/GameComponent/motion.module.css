@@ -1,0 +1,36 @@
+.container{
+    height: 70px;
+    width: 70px;
+    background-color: #61dafb;
+    border: 1px solid black;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container img{
+    height: 50px;
+    width: 50px;
+}
+.up img{}
+
+.down img{
+    transform: rotate(-180deg);
+}
+.right img{
+    transform: rotate(-270deg);
+}
+.left img{
+    transform: rotate(-90deg);
+}
+
+.motions0:first-child{
+    background: rgb(248, 2, 2);
+    border: 2px coral solid;
+    opacity: 0.85;
+}
+.motions1:last-child{
+    background: rgb(248, 2, 2);
+    border: 2px coral solid;
+    opacity: 0.85;
+}
