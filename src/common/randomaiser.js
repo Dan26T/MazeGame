@@ -5,14 +5,12 @@ const getRandomInt = (min, max) => {
 }
 
 export const randomStartPoint = (playField) => {
-    debugger
     let rowL = playField.length
     let colL = playField[0].length
     return [getRandomInt(0, rowL), getRandomInt(0, colL) ]
 }
 
 export const randomMotions = (startPoint, playField, motionsLength) => {
-    debugger
     let motions = []
     let cases = []
     let currentPoint = startPoint

@@ -4,7 +4,6 @@ import s from './game.module.css'
 import {createPlayField, getMotionsLength} from "../Redux/gameReducer.js";
 
 const gameText = (status) => {
-    debugger
     if(status === 'Fail'){
         return 'Do you want try again?'
     }else if(status === 'Win'){
@@ -14,7 +13,6 @@ const gameText = (status) => {
     }
 }
 const gameSubText = (status) => {
-    debugger
     if(status === 'Fail'){
         return 'Sorry, you lost..'
     }else if(status === 'Win'){
@@ -30,12 +28,10 @@ const StartGame = (props) => {
     let [subText, setSubText] = useState("")
     let [lvl, setLvl] = useState("easy")
     useEffect(()=> {
-        debugger
         setText(gameText(props.gameStatus))
         setSubText(gameSubText(props.gameStatus))
     }, [props.gameStatus])
     useEffect(()=> {
-        debugger
         setLvl(props.lvl)
     }, [props.lvl])
 
@@ -62,7 +58,7 @@ const StartGame = (props) => {
             <h1 className={s.hello_text}>{text}</h1>
         </div>
         <span className={s.options_block}>
-            <h1 style={{marginRight:20+'px'}}>Level</h1>
+            <h1 className={s.hello_text}>Level</h1>
                 <select id="lvl" className={lvl === 'easy' ? s.select : [s.select, changeLvlColor()].join(' ')}
                         onChange={e => changeLvl(e)} defaultValue={props.lvl} >
                     <option value="easy">Easy</option>

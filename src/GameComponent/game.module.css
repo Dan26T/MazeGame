@@ -2,6 +2,7 @@
     width: 1300px;
     height: 650px;
     margin: 0 auto;
+    margin-left: -50px;
     margin-bottom: -100px;
     background: #252E42;
     border-radius: 20px;
@@ -84,6 +85,7 @@
 }
 
 .startMenu {
+    margin-left: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,4 +127,216 @@ option{
 
 .hard{
     background-color: #ef4141
+}
+@media (max-width: 1400px) {
+    .container {
+        width: 700px;
+        height: 600px;
+    }
+    .col{
+        height: 60px;
+        width: 60px;
+    }
+    .motions{
+        min-width: 250px;
+        min-height: 180px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 5px;
+        grid-columns-gap: 5px;
+
+    }
+    .hello_text{
+        font-size: 28px;
+        margin: 5px
+    }
+    .select{
+        width: 150px
+    }
+
+    .butt {
+        margin-top: 5px;
+        height: 40px;
+        width: 150px;
+    }
+    .butt a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #252E42;
+        font-weight: 600;
+    }
+    .selectorField img{
+        height: 45%;
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 1025px) {
+    .container {
+        margin-left: 0;
+        width: 650px;
+        height: 550px;
+    }
+    .col{
+        height: 80px;
+        width: 80px;
+    }
+    .motions{
+        min-width: 400px;
+        min-height: 255px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+
+    }
+    .hello_text{
+        font-size: 28px;
+        margin: 5px
+    }
+    .select{
+        width: 150px
+    }
+
+    .butt {
+        margin-top: 5px;
+        height: 40px;
+        width: 150px;
+    }
+    .butt a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #252E42;
+        font-weight: 600;
+    }
+    .startMenu{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.63);
+        position:absolute;
+        top:0;
+        left: 0;
+        margin: auto auto;
+        margin-left: 0;
+    }
+
+    
+}
+
+@media (max-width: 769px) {
+    .container {
+        margin-left: 0;
+        width: 650px;
+        height: 650px;
+    }
+    .col{
+        height: 80px;
+        width: 80px;
+    }
+    .motions{
+        min-width: 500px;
+        min-height: 150px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 5px;
+
+    }
+    .hello_text{
+        font-size: 28px;
+        margin: 5px
+    }
+    .select{
+        width: 150px
+    }
+
+    .butt {
+        margin-top: 5px;
+        height: 40px;
+        width: 150px;
+    }
+    .butt a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #252E42;
+        font-weight: 600;
+    }
+    .startMenu{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.63);
+        position:absolute;
+        top:0;
+        left: 0;
+        margin: auto auto;
+        margin-left: 0;
+    }
+
+
+}
+@media (max-width: 450px) {
+    .container {
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .col{
+        height: 65px;
+        width: 65px;
+    }
+    .col img{
+        height: 70%;
+        width: 70%;
+    }
+    .selectorField img{
+        height: 45%;
+        width: 45%;
+    }
+    .motions{
+        min-width: 280px;
+        min-height: 120px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 5px;
+
+    }
+    .hello_text{
+        font-size: 28px;
+        margin: 5px
+    }
+    .select{
+        width: 150px
+    }
+
+    .butt {
+        margin-top: 5px;
+        height: 40px;
+        width: 150px;
+    }
+    .butt a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #252E42;
+        font-weight: 600;
+    }
+    .startMenu{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.63);
+        position:absolute;
+        top:0;
+        left: 0;
+        margin: auto auto;
+    }
+    .text_block{
+        flex-direction: column;
+    }
+
 }

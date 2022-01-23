@@ -16,4 +16,7 @@
     flex-direction: column;
     justify-content: center;
 }
+@media(max-width: 1025px){
+    .App {  background-color: #252E42;}
+}
 

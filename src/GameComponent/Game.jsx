@@ -18,7 +18,6 @@ const Game = (props) => {
     useEffect(() => {
         let vue = null
         if (gameStatus === 'Run' && props.motions.length !== 0 && motionsCounter < props.motions.length) {
-            debugger
             vue = setInterval(_ => {
                 setGMotions(props.motions.slice(0, motionsCounter))
                 setMotionsCounter(motionsCounter += 1)
@@ -118,8 +117,8 @@ const Marker = (props) => {
                 if (fieldId === currentPointId && fieldStatus !== 'WonPoint') {
                     return <img src={imgSelector('WonPoint')}/>
                 } else if (fieldStatus === 'FailPoint') {
-                    return <span><img src={imgSelector('FailPoint')}/>
-                    <img src={imgSelector('UserAnswerPoint')}/></span>
+                    return <div className={s.selectorField}><img src={imgSelector('FailPoint')}/>
+                    <img src={imgSelector('UserAnswerPoint')}/></div>
                 }
                 return <img src={imgSelector(fieldStatus)}/>
 

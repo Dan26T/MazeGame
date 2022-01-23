@@ -34,3 +34,28 @@
     border: 2px coral solid;
     opacity: 0.85;
 }
+
+
+@media (max-width: 1400px) {
+    .container{
+        height: 60px;
+        width: 60px;
+    }
+    .container img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container{
+        height: 50px;
+        width: 50px;
+    }
+    .container img{
+        height: 40px;
+        width: 40px;
+    }
+
+
+}

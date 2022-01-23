@@ -5,6 +5,7 @@ const START_GAME = 'game/START_GAME'
 const GAME_CHECK = 'game/GAME_CHECK'
 
 
+
 let initialState = {
     playField: [
         [{id: 1, status: ''}, {id: 2, status: ''}, {id: 3, status: ''}],
@@ -22,7 +23,6 @@ let initialState = {
     lvl: 'easy'
 };
 export const createPlayField = (lvl) => {
-    debugger
     let newState = []
     let rowCount = 0
     let colCount = 0
@@ -37,7 +37,6 @@ export const createPlayField = (lvl) => {
             }else newState[r].push({id:r*colCount+c+1, status: ''})
         }
     }
-    debugger
     return newState
 }
 export const getMotionsLength = (lvl) => {

@@ -8,7 +8,6 @@ import s from './game.module.css'
 
 class GameContainer extends React.Component {
     componentDidMount() {
-        debugger
         if (!this.props.userIsPlayed) {
             let start = randomStartPoint(this.props.playField)
             this.props.getStartPoint(start)
